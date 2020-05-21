@@ -1,1 +1,222 @@
 /*** Add your styles here **/
+body {
+    background-color: #efefef;
+}
+
+h2, h3{
+    font-family: 'Late', sans-serif;
+    color: black;
+    line-height: 2.4rem;
+}
+h2{
+    color:black;
+    font-size: 2.4rem;
+}
+h2 span{
+    color: #E082A8;
+    font-size: 4rem;
+}
+h3{
+    font-size: 2rem;
+}
+h3 span{
+    font-size: 3rem;
+}
+
+h2 span, h3 span{
+    font-family: 'Italianno', cursive;
+    display: block;
+    color: #E082A8;
+}
+
+/*Socials menu*/
+.socials ul{
+list-style: none;
+}
+.socials ul li{
+    position:relative;
+    display:inline-block;
+}
+.socials ul li a::before{
+    font-family: 'FontAwesome';
+    display:inline-block;
+    vertical-align: top;
+    padding:0 0.4rem;
+    content:'\f08e';
+    color: #E082A8;
+    -webkit-font-smoothing:antialiased;
+    font-size: 2rem;
+}
+
+.socials ul li a[href*="facebook.com"]::before{
+    content:'\f230';
+}
+.socials ul li a[href*="twitter.com"]::before{
+    content:'\f081';
+}
+.socials ul li a[href*="instagram.com"]::before{
+    content:'\f16d';
+}
+.socials ul li a[href*="pinterest.com"]::before{
+    content:'\f0d2';
+}
+.socials ul li a[href*="youtube.com"]::before{
+    content:'\f16a';
+}
+/*Navigation section*/
+.navigation{
+    background-color: #8ED3CC;
+}
+.main-nav{
+    background-image:   url(../img/border_horizontal.png),
+                        url(../img/border_horizontal.png);
+
+    background-repeat: repeat-x;
+    background-position:0px top, 0px bottom;
+}
+
+.nav-item{
+    transition: background-color 0.3s ease;
+}
+.nav-item:hover{
+    background-color: #39A69B;
+    border-radius: 5px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    color:#FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Carousel section*/
+
+.carousel .carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.new-website{
+    margin: 2.4rem 0 0;
+}
+.new-website p{
+    font-family: 'Late', sans-serif;
+    font-size: 1.4rem;
+    color: #979797;
+}
+.image-links img{
+    border:2px solid #C3C3C3;
+    transition: transform 0.5s ease;
+}
+
+.image-links img:hover{
+    /*When hover transform the image*/
+    transform: scale(1.1);
+}
+.image-info{
+    background-color:#FFFFFF;
+    margin-top:-50px; 
+}
+.image-info .btn-success{
+    background-color:#E082A8;
+    border:none;
+    border-radius: 0;
+}
+.image-info .btn-success:hover{
+    background-color: #CA5B88;
+}
+
+.bg-hours{
+    background-image: url(../img/bg_hours.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+}
+
+.business-hours{
+    background-color: #8ED3CC;
+    color:#FFFFFF;
+}
+
+.business-hours h2{
+    color:#FFFFFF;
+}
+
+.table{
+    border:2px solid #E082A8;
+}
+
+.table td, .table thead th{
+    border:none;
+}
+.table tbody tr td{
+    padding: 0.35rem;
+}
+.table-danger, .table-hover .table-danger:hover{
+     background-color:#E082A8;
+}
+
+.products .card{
+    border: none;
+}
+
+.products .card a{
+    color:#000000;
+}
+.products .card a:hover{
+    text-decoration: none;
+}
+.products .card h3{
+    font-size: 1.3rem;
+    color:#E082A8;
+}
+.products .card p{
+    font-size: 0.8rem;
+}
+.products .card p.price{
+    font-size: 1.5rem;
+    font-family: 'Lato',sans-serif;
+    color:#979797;
+}
+
+.appointment{
+    background-image:url(../img/bg_appointment.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.appointment h3{
+    font-size: 3.5rem;
+    color:#FFFFFF;
+    line-height: 4rem;
+}
+.appointment p{
+    line-height: 2.6rem;
+    color:#FFFFFF;
+}
+
+@media(min-width:992px){
+    .appointment{
+        background-size:cover;
+    }
+}
+
+.appointment .btn-primary{
+    background-color:#8ED3CC;
+    border:0;
+    border-radius: 0;
+    padding:1rem 5rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.appointment .btn-primary:hover{
+    background-color:#68BEB5;
+}
+
+.site-footer p.copyright{
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+}
